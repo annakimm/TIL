@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Today I learned2 | hyejinkim</title>
+    </head>
+    <body>
+    <!-- CSS를 이용하지 않고 레이아웃을 만들 때 -->
+        <div style="height: 100px; background-color: skyblue;">
+            <p>test1</p>
+        </div>
+        <div style="height: 50px; background-color: yellow;">
+            <p>test2</p>
+        </div>
+    <!-- 표 만들기 -->
+    <!--table>caption+thead>tr>th{idx}+th{A}^^tbody>tr>th{1}+th{A1}-->
+        <table>
+            <caption>테이블의 제목</caption>
+            <thead>
+                <tr>
+                    <th>idx</th>
+                    <th>A</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <th>A1</th>
+                </tr>
+            </tbody>
+            <tr>
+                <th>2</th>
+                <th>A2</th>
+            </tr>
+        </table>
+    <!-- 리스트 만들기 -->
+        <ul>
+            <li>ul_li_1</li>
+            <li>ul_li_2</li>
+        </ul>
+    <!-- 링크 연결 -->
+        <a href="http://google.com">Google</a><br/>
+        <a href="http://google.com" target="_blank">Google</a>
+    <!-- 다른 홈페이지에서 사용된 이미지 넣기 -->
+        <img style="with: 200px;" src="http://cdn.www.fastcampus.co.kr/wp-content/uploads/2017/11/fastcampus_logo_positive-1.png" alt="no image">
+    <!-- 다른 웹페이지 넣기 -->
+        <iframe src="file:C:\Users\Home\Documents\dev\TIL\web\01_html_basic.html" frameborder="0" hight="800" weight="800"></iframe><br/>
+    <!-- 로그인 정보를 받거나 체크박스 만들기 -->
+        <input type="text" name="" value="" placeholder="이메일">
+        <input type="passwrd" name="" value="" placeholder="비밀번호"><br/>
+        <br/>
+        <input type="radio" name="radio1" value="b1">버튼1</input><br/>
+        <input type="radio" name="radio1" value="b1">버튼2</input><br/>
+        <input type="radio" name="radio1" value="b1" checked>버튼3</input><br/>
+        <input type="radio" name="radio2" value="b1">버튼4</input><br/>
+        <input type="radio" name="radio2" value="b2">버튼5</input><br/>
+        <br/>
+        <input type="checkbox" name="" value="c1">체크박스1</input><br/>
+        <input type="checkbox" name="" value="c2">체크박스2</input><br/>
+
+    <!-- 여러 줄의 텍스트를 입력받을 때 -->
+        <textarea name="ta" rows="8" cols="80"></textarea><br/>
+        <textarea name="ta2" rows="5" cols="50" style="resize:none;"></textarea><br/>
+
+    <!-- dropbox 만들기 -->
+    <!--select>option[value=$]{option$}*3 -->
+        <select name="" id="">
+            <option value="1">option1</option>
+            <option value="2">option2</option>
+            <option value="3">option3</option>
+        </select><br/>
+    <!-- 클릭버튼 만들기 -->
+        <button type="button" onclick="javascript:(alert("Hello"))">Click</button>
+    </body>
+</html>
